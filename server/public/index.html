@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-log Dashboard</title>
+
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet"
+        href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" 
+        href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!-- App Layout -->
+<section id="main" class="container">
+    <h1>E-log Dashboard</h1>
+
+    <h3>Showing <span id="total"></span> Total Registers</h3>
+    <hr/>
+
+    <div class="row" style="overflow-x:auto;">
+            <h3>"Registers"</h3>
+            <table id="responses">
+                <tr>
+                    <th>Unique Identifier Code</th>
+                    <th>Licensed Fishing Area (LFA)</th>
+                    <th>Number of days</th>
+                    <th>Number of Lobster Harvested (Lbs)</th>
+                    <th>Number of Rock Crab Captures</th>
+                    <th>Number of Sculpin Captures</th>
+                    <th>Number of Cunner Captures </th>
+                    <th>GPS Coordinates</th>
+                    <th>Date</th>
+                    <th>Time (UTC)</th>
+                    <th>XML</th>
+                </tr>
+            </table>
+    </div>
+
+</section>
+
+<!-- JS Dependencies -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="chart.js"></script>
+
+<!-- App script -->
+<script src="index.js"></script>
+
+</body>
+</html>
